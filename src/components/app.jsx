@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const App = () => (
-  <div>
-    React is compiling correctly.
-  </div>
-);
+class App extends Component {
+  constructor() {
+    super();
+
+  }
+
+  render() {
+
+    return (
+      <div>
+        React working
+      </div>
+    );
+  }
+}
 
 export default App;
