@@ -1,7 +1,7 @@
 {
-  "name": "amanda-react-boilerplate",
+  "name": "pivot-table",
   "version": "1.0.0",
-  "description": "Template for React, Webpack and Airbnb Linter",
+  "description": "An app to display JSON data in a pivot table",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
