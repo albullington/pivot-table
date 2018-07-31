@@ -1,10 +1,12 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const fs = require('fs');
 const JSONStream = require('JSONStream');
 const es = require('event-stream');
 
 const app = express();
+app.use(cors());
 
 const finalData = [];
 
@@ -21,8 +23,6 @@ app.get('/data', (req, res) => {
         'Source IP': data['All_Traffic.src'],
         'Sum Of Bytes': data.sum_bytes,
       });
-      // console.log('data json', finalData);
-      // console.error(data);
       if (finalData.length > 249) {
         res.end(JSON.stringify(finalData));
       }
