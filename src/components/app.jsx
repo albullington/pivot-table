@@ -32,6 +32,13 @@ class App extends Component {
       });
   }
 
+  storeState(key, value) {
+    this.setState({
+      [key]: value,
+    });
+    localStorage.setItem(key, value);
+  }
+
   render() {
     const {
       data,
@@ -43,6 +50,7 @@ class App extends Component {
         <p>1) Drag Source IP below the Count dropdown to see the total number of data transfers initiated from this IP address.</p>
         <p>2) Drag Source IP below the Count dropdown, then drag Destination IP beneath Source IP to see the origin and destination IP addresses for each data transfer.</p>
         <p>3) Drag Destination IP below the Count dropdown and Source IP to the right of Count dropdown, then set the Table dropdown to Table Heatmap to see a visual representation of which sources and destinations are most popular.</p>
+        <p>4) Click on Source IP or Destination IP to filter data by specific IP addresses.</p>
         <PivotTableUI
           data={data}
           onChange={s => this.setState(s)}
