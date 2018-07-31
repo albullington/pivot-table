@@ -24,4 +24,4 @@ This pivot table was made with the [react-pivottable](https://www.npmjs.com/pack
 
 Here are a few screenshots of helpful pivots. 
 
-![Source to Destination](./screenshots/source_to_destination?raw=true "Source to Destination")
+![Source to Destination](https://github.com/albullington/pivot-table/blob/master/screenshots/source_to_destination.png?raw=true)
