@@ -32,13 +32,6 @@ class App extends Component {
       });
   }
 
-  storeState(key, value) {
-    this.setState({
-      [key]: value,
-    });
-    localStorage.setItem(key, value);
-  }
-
   render() {
     const {
       data,
