@@ -4,11 +4,8 @@ import PivotTableUI from 'react-pivottable/PivotTableUI';
 import 'react-pivottable/pivottable.css';
 import TableRenderers from 'react-pivottable/TableRenderers';
 import createPlotlyComponent from 'react-plotly.js/factory';
-import createPlotlyRenderers from 'react-pivottable/PlotlyRenderers';
 
 const Plot = createPlotlyComponent(window.Plotly);
-
-const PlotlyRenderers = createPlotlyRenderers(Plot);
 
 class App extends Component {
   constructor() {
@@ -44,7 +41,7 @@ class App extends Component {
       <PivotTableUI
         data={data}
         onChange={s => this.setState(s)}
-        renderers={Object.assign({}, TableRenderers, PlotlyRenderers)}
+        renderers={Object.assign({}, TableRenderers)}
         {...this.state}
       />
     );

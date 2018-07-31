@@ -17,9 +17,9 @@ app.get('/data', (req, res) => {
     .pipe(JSONStream.parse('result'))
     .pipe(es.mapSync((data) => {
       finalData.push({
-        destination_IP: data['All_Traffic.dest'],
-        source_IP: data['All_Traffic.src'],
-        sum_of_bytes: data.sum_bytes,
+        'Destination IP': data['All_Traffic.dest'],
+        'Source IP': data['All_Traffic.src'],
+        'Sum Of Bytes': data.sum_bytes,
       });
       // console.log('data json', finalData);
       // console.error(data);
