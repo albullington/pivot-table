@@ -22,6 +22,17 @@ Finally, start the Express server. You can go to localhost:3001 to make sure the
 
 This pivot table was made with the [react-pivottable](https://www.npmjs.com/package/react-pivottable) library. 
 
-Here are a few screenshots of helpful pivots. 
+Here are a few screenshots of helpful pivots: 
+
+## Source to Destination
 
 ![Source to Destination](https://github.com/albullington/pivot-table/blob/master/screenshots/source_to_destination.png?raw=true)
+
+## Filtered IPs
+
+![Filtered IPs](https://github.com/albullington/pivot-table/blob/master/screenshots/filtered_IPs.png?raw=true)
+
+## Source Totals
+
+![Source Totals](https://github.com/albullington/pivot-table/blob/master/screenshots/source_totals.png?raw=true)
+
