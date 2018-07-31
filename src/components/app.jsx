@@ -5,7 +5,7 @@ import 'react-pivottable/pivottable.css';
 import TableRenderers from 'react-pivottable/TableRenderers';
 import createPlotlyComponent from 'react-plotly.js/factory';
 
-const Plot = createPlotlyComponent(window.Plotly);
+createPlotlyComponent(window.Plotly);
 
 class App extends Component {
   constructor() {
@@ -38,12 +38,18 @@ class App extends Component {
     } = this.state;
 
     return (
-      <PivotTableUI
-        data={data}
-        onChange={s => this.setState(s)}
-        renderers={Object.assign({}, TableRenderers)}
-        {...this.state}
-      />
+      <div>
+        <p>Recommended pivots: </p>
+        <p>1) Drag Source IP below the Count dropdown to see the total number of data transfers initiated from this IP address.</p>
+        <p>2) Drag Source IP below the Count dropdown, then drag Destination IP beneath Source IP to see the origin and destination IP addresses for each data transfer.</p>
+        <p>3) Drag Destination IP below the Count dropdown and Source IP to the right of Count dropdown, then set the Table dropdown to Table Heatmap to see a visual representation of which sources and destinations are most popular.</p>
+        <PivotTableUI
+          data={data}
+          onChange={s => this.setState(s)}
+          renderers={Object.assign({}, TableRenderers)}
+          {...this.state}
+        />
+      </div>
     );
   }
 }
