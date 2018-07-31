@@ -21,3 +21,7 @@ Finally, start the Express server. You can go to localhost:3001 to make sure the
 ## Using the pivot table
 
 This pivot table was made with the [react-pivottable](https://www.npmjs.com/package/react-pivottable) library. 
+
+Here are a few screenshots of helpful pivots. 
+
+![Source to Destination](./screenshots/source_to_destination?raw=true "Source to Destination")
